@@ -1,0 +1,57 @@
+{
+  "project": "ALIVE Coach – AI Fitness & Lifestyle Agent",
+  "sprint": {
+    "title": "1-Hour Sprint – Core Foundation",
+    "owner": "[Your Name]",
+    "date": "2025-05-13",
+    "duration": "1 hour",
+    "goal": "Set up the initial backend structure and AI interaction prompt logic to serve one user end-to-end for Day 1.",
+    "deliverables": [
+      "schema.sql – Foundational PostgreSQL schema",
+      "prompts.md – Smart coaching prompts (first version)",
+      "sample_user_data.sql – Insert for 1 mock user (Day 1 scenario)",
+      "README.md – Setup and next sprint plan"
+    ]
+  },
+  "tasks": [
+    {
+      "title": "Data Schema Setup",
+      "time_estimate_min": 20,
+      "description": "Create schema definitions for core MVP tables: users, daily_logs, workout_sessions, health_metrics, ai_interactions.",
+      "output": "schema.sql"
+    },
+    {
+      "title": "Smart Prompt Design",
+      "time_estimate_min": 20,
+      "description": "Write first draft of 3 AI interaction prompts for Day 1 Welcome, Post-sleep Low Energy, and Workout Feedback scenarios.",
+      "output": "prompts.md"
+    },
+    {
+      "title": "Mock Data Insert",
+      "time_estimate_min": 10,
+      "description": "Insert mock data for one test user including bio, mood, sleep, cycle phase, and workout plan.",
+      "output": "sample_user_data.sql"
+    },
+    {
+      "title": "Wrap & Review",
+      "time_estimate_min": 10,
+      "description": "Write README, export schema image, summarize sprint progress.",
+      "output": "README.md"
+    }
+  ],
+  "bonus": [
+    "Set up a SQLite local DB and test inserts",
+    "Run mock prompt with GPT for mood-based recommendation"
+  ],
+  "next_sprint_ideas": [
+    "Connect schema to lightweight Python API",
+    "Build /coach endpoint to simulate prompt & response",
+    "Create simple frontend (chat + dashboard mock)",
+    "Add menstrual/cycle sync module"
+  ],
+  "success_criteria": [
+    "Can simulate one full Day 1 interaction",
+    "Data structure supports fitness + emotional + biometric context",
+    "Prompt system matches user rhythm and offers clear next step"
+  ]
+}
